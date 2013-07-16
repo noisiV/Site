@@ -1,0 +1,14 @@
+{
+  "name": "NextTechComputers",
+  "private": true,
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noisiV/Site.git"
+  },
+  "author": "Brad Carter",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/noisiV/Site/issues"
+  }
+}
