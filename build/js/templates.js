@@ -90,7 +90,7 @@ __p += '<h1>Corporate Services</h1>';
 return __p
 };
 
-this["tmpl"]["services/inStore"] = function(obj) {
+this["tmpl"]["services/instore"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
@@ -100,7 +100,7 @@ __p += '<h1>In Store Services</h1>';
 return __p
 };
 
-this["tmpl"]["services/onSite"] = function(obj) {
+this["tmpl"]["services/onsite"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {

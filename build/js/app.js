@@ -5,6 +5,8 @@
 
   window.app = {};
 
+  app.dropdown = $('.pull-menu');
+
   app.CoreView = (function(_super) {
     __extends(CoreView, _super);
 
@@ -14,6 +16,12 @@
     }
 
     CoreView.prototype.el = $('#core');
+
+    CoreView.prototype.hackNav = function() {
+      if (document.width < 980) {
+        return app.dropdown.trigger('click');
+      }
+    };
 
     return CoreView;
 
@@ -37,6 +45,7 @@
     About.prototype.render = function() {
       this.$el.empty();
       this.$el.html(tmpl.about());
+      this.hackNav();
       return this;
     };
 
@@ -62,6 +71,7 @@
     Computers.prototype.render = function(t) {
       this.$el.empty();
       this.$el.html(tmpl["computers/" + t]());
+      this.hackNav();
       return this;
     };
 
@@ -87,6 +97,7 @@
     Contact.prototype.render = function() {
       this.$el.empty();
       this.$el.html(tmpl.contact());
+      this.hackNav();
       return this;
     };
 
@@ -112,6 +123,7 @@
     Home.prototype.render = function() {
       this.$el.empty();
       this.$el.html(tmpl.home());
+      this.hackNav();
       return this;
     };
 
@@ -137,6 +149,7 @@
     Services.prototype.render = function(t) {
       this.$el.empty();
       this.$el.html(tmpl["services/" + t]());
+      this.hackNav();
       return this;
     };
 
