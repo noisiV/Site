@@ -5,7 +5,7 @@ module.exports = (grunt) ->
       compile:
         files:
           'build/js/app.js': [
-            'src/cs/preinit.coffee'
+            'src/cs/pre-init.coffee'
             'src/cs/views/*.coffee'
             'src/cs/router.coffee'
             'src/cs/init.coffee'
@@ -19,7 +19,6 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jst'
-  grunt.loadNpmTasks 'grunt-contrib-stylus'
 
   grunt.registerTask 'default', ['coffee', 'jst']
 
