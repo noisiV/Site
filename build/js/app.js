@@ -18,7 +18,7 @@
     CoreView.prototype.el = $('#core');
 
     CoreView.prototype.hackNav = function() {
-      if (document.width < 980) {
+      if ($(document).width() < 980) {
         return app.dropdown.trigger('click');
       }
     };
