@@ -10,5 +10,10 @@
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/noisiV/Site/issues"
+  },
+  "dependencies": {
+    "grunt": "*",
+    "grunt-contrib-jst": "*",
+    "grunt-contrib-coffee": "*"
   }
 }

@@ -13,7 +13,10 @@ module.exports = (grunt) ->
     jst:
       compile:
         options:
-          namespace: 'app.tmpl'
+          namespace: 'tmpl'
+          processName: (filename) ->
+            filename.match(/src\/tmpl\/(.*).html/)[1]
+
         files:
           "build/js/templates.js": ["src/tmpl/**/*.html"]
 
